@@ -18,8 +18,8 @@ public class FlightsTest {
 
     @Before
     public void setUp(){
-        flight1 = new Flight("Cathay Pacific","LHR");
-        flight2 = new Flight("British Airways", "LHR");
+        flight1 = new Flight("Cathay Pacific","LHR", "AUH", "1792211", "2018-01-05", "20:15:00", "LHR", "", "CX", "HKG", "2018-01-05","15:05:00", "Economy", "CX253", "0", "AUD","2567.240","2018-01-01","17:50:00", "","CX", "2018-01-01", "11:25:00", "Economy", "CX162", "WW6VWU");
+        flight2 = new Flight("British Airways", "LHR", "DXB", "1803064","2018-01-20","15:10:00", "LHR", "", "BA", "DEL","2018-01-20","11:05:00","Economy", "BA256", "0","GBP", "1018.140","2018-01-02", "08:35:00", "", "BA", "2018-01-01", "21:40:00", "Economy", "BA109", "VX93UK" );
 //        flightArray = new ArrayList<>();
 //        flightsSchedule = new Flights(flightArray);
     }

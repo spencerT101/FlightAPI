@@ -17,7 +17,7 @@ import java.util.ArrayList;
 public class FlightsController {
 
     private Flights flights1 = new Flights();
-    private Flight flightDetail = new Flight("Cathay Pacific");
+    private Flight flightDetail = new Flight("Cathay Pacific", "LHR","DXB", "1792211","2018-01-05", "20:15:00", "LHR", "", "CX", "HKG","2018-01-05","15:05:00", "Economy", "CX253", "0", "AUD", "2567.240","2018-01-01","17:50:00", "", "CX", "2018-01-01", "11:25:00", "Economy", "CX162", "WW6VWU");
     private ArrayList<Flight> flights  = new ArrayList<>();
 //    private XmlToJava unmarshal = new XmlToJava();
 
