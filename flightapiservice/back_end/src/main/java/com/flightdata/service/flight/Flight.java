@@ -66,7 +66,7 @@ public class Flight {
 
     }
 
-//    @XmlAttribute(name = "carrier")
+    @XmlAttribute(name = "carrier")
     public String getFlightCarrier() {
         return carrier;
     }
@@ -75,6 +75,7 @@ public class Flight {
         this.carrier = carrier;
     }
 
+    @XmlAttribute(name = "depair")
     public String getDepAir() {
         return depair;
     }
@@ -83,6 +84,7 @@ public class Flight {
         this.depair = depair;
     }
 
+    @XmlAttribute(name = "destair")
     public String getDestAir(){
         return destair;
     }
@@ -91,6 +93,7 @@ public class Flight {
         this.destair = destair;
     }
 
+    @XmlAttribute(name = "id")
     public String getId() {
         return id;
     }
@@ -99,7 +102,8 @@ public class Flight {
         this.id = id;
     }
 
-    public String getInarrivalDate() {
+    @XmlAttribute(name = "inarrivaldate")
+    public String getInArrivalDate() {
         return inArrivalDate;
     }
 
@@ -107,6 +111,7 @@ public class Flight {
         this.inArrivalDate = inArrivalDate;
     }
 
+    @XmlAttribute(name = "inarrivaltime")
     public String getInarrivalTime() {
         return inArrivalTime;
     }
@@ -115,6 +120,7 @@ public class Flight {
         this.inArrivalTime = inArrivalTime;
     }
 
+    @XmlAttribute(name = "inarrivalcode")
     public String getInarriveCode() {
         return inArriveCode;
     }
@@ -123,6 +129,7 @@ public class Flight {
         this.inArriveCode = inArriveCode;
     }
 
+    @XmlAttribute(name = "inbookingclass")
     public String getInbookingClass() {
         return inBookingClass;
     }
@@ -131,6 +138,7 @@ public class Flight {
         this.inBookingClass = inBookingClass;
     }
 
+    @XmlAttribute(name = "incarriercode")
     public String getIncarrierCode() {
         return inCarrierCode;
     }
@@ -139,6 +147,7 @@ public class Flight {
         this.inCarrierCode = inCarrierCode;
     }
 
+    @XmlAttribute(name = "indepartcode")
     public String getIndepartCode() {
         return inDepartCode;
     }
@@ -147,6 +156,7 @@ public class Flight {
         this.inDepartCode = inDepartCode;
     }
 
+    @XmlAttribute(name = "indepartdate")
     public String getInDepartDate() {
         return inDepartDate;
     }
@@ -155,6 +165,7 @@ public class Flight {
         this.inDepartDate = inDepartDate;
     }
 
+    @XmlAttribute(name = "indeparttime")
     public String getInDepartTime() {
         return inDepartTime;
     }
@@ -163,6 +174,7 @@ public class Flight {
         this.inDepartTime = inDepartTime;
     }
 
+    @XmlAttribute(name = "inflightclass")
     public String getInFlightClass() {
         return inFlightClass;
     }
@@ -171,6 +183,7 @@ public class Flight {
         this.inFlightClass = inFlightClass;
     }
 
+    @XmlAttribute(name = "inflightno")
     public String getInFlightNo() {
         return inFlightNo;
     }
@@ -179,14 +192,17 @@ public class Flight {
         this.inFlightNo = inFlightNo;
     }
 
+    @XmlAttribute(name = "oneway")
     public String getOneWay() {
         return oneWay;
     }
+
 
     public void setOneWay(String oneWay) {
         this.oneWay = oneWay;
     }
 
+    @XmlAttribute(name = "orginalcurrency")
     public String getOriginalCurrency() {
         return originalCurrency;
     }
@@ -195,6 +211,7 @@ public class Flight {
         this.originalCurrency = originalCurrency;
     }
 
+    @XmlAttribute(name = "orginalprice")
     public String getOriginalPrice() {
         return originalPrice;
     }
@@ -203,6 +220,7 @@ public class Flight {
         this.originalPrice = originalPrice;
     }
 
+    @XmlAttribute(name="outarrivaldate")
     public String getOutArrivalDate() {
         return outArrivalDate;
     }
@@ -211,6 +229,7 @@ public class Flight {
         this.outArrivalDate = outArrivalDate;
     }
 
+    @XmlAttribute(name = "outarrivaldate")
     public String getOutArrivalTime() {
         return outArrivalTime;
     }
@@ -219,6 +238,7 @@ public class Flight {
         this.outArrivalTime = outArrivalTime;
     }
 
+    @XmlAttribute(name = "outbookingclass")
     public String getOutBookingClass() {
         return outBookingClass;
     }
@@ -227,6 +247,7 @@ public class Flight {
         this.outBookingClass = outBookingClass;
     }
 
+    @XmlAttribute(name = "outcarriercode")
     public String getOutCarrierCode() {
         return outCarrierCode;
     }
@@ -235,6 +256,7 @@ public class Flight {
         this.outCarrierCode = outCarrierCode;
     }
 
+    @XmlAttribute(name = "outdepartdate")
     public String getOutDepartDate() {
         return outDepartDate;
     }
@@ -243,6 +265,7 @@ public class Flight {
         this.outDepartDate = outDepartDate;
     }
 
+    @XmlAttribute(name = "outdeparttime")
     public String getOutDepartTime() {
         return outDepartTime;
     }
@@ -251,6 +274,7 @@ public class Flight {
         this.outDepartTime = outDepartTime;
     }
 
+    @XmlAttribute(name = "outflightclass")
     public String getOutFlightClass() {
         return outFlightClass;
     }
@@ -259,6 +283,7 @@ public class Flight {
         this.outFlightClass = outFlightClass;
     }
 
+    @XmlAttribute(name = "outflightno")
     public String getOutFlightNo() {
         return outFlightNo;
     }
@@ -267,6 +292,7 @@ public class Flight {
         this.outFlightNo = outFlightNo;
     }
 
+    @XmlAttribute(name = "reservation")
     public String getReservation() {
         return reservation;
     }

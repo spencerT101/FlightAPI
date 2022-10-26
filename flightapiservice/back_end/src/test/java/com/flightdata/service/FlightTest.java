@@ -53,13 +53,13 @@ public class FlightTest {
 
     @Test
     public void canGetInArrivalDate(){
-        assertEquals("2018-01-20", flight1.getInarrivalDate());
+        assertEquals("2018-01-20", flight1.getInArrivalDate());
     }
 
     @Test
     public void canSetInArrivalDate(){
         flight1.setInarrivalDate(DATE);
-        assertEquals(DATE, flight1.getInarrivalDate());
+        assertEquals(DATE, flight1.getInArrivalDate());
     }
 
     @Test
@@ -292,10 +292,5 @@ public class FlightTest {
         flight1.setReservation("RRRR");
         assertEquals("RRRR", flight1.getReservation());
    }
-
-
-
-
-
 
 }
