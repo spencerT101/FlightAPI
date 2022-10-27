@@ -10,10 +10,10 @@ import static org.junit.Assert.assertEquals;
 
 public class FlightScheduleTest {
 
-    private static Flight flight1;
-    private static Flight flight2;
-    private static ArrayList<Flight> flightArray;
-    private static FlightSchedule flightScheduleSchedule;
+    private  Flight flight1;
+    private  Flight flight2;
+    private  ArrayList<Flight> flightArray;
+    private  FlightSchedule flightScheduleSchedule;
 
 
     @Before

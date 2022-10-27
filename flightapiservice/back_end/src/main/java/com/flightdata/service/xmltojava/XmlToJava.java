@@ -38,24 +38,24 @@ public class XmlToJava {
                 System.out.println(st);
                 sb.append(st);
             }
-        }catch (IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
         }
 
 
-            JAXBContext context = JAXBContext.newInstance(FlightSchedule.class);
-            Unmarshaller unmarshaller = context.createUnmarshaller();
+        JAXBContext context = JAXBContext.newInstance(FlightSchedule.class);
+        Unmarshaller unmarshaller = context.createUnmarshaller();
 
-            StringReader reader = new StringReader(sb.toString());
-            FlightSchedule flightSchedule = (FlightSchedule) unmarshaller.unmarshal(reader);
+        StringReader reader = new StringReader(sb.toString());
+        FlightSchedule flightSchedule = (FlightSchedule) unmarshaller.unmarshal(reader);
 
-            List<Flight> list = flightSchedule.getFlights();
+        List<Flight> list = flightSchedule.getFlights();
 
-            if(list != null){
-                for (Flight fli : list)
+        if (list != null) {
+            for (Flight fli : list)
                 System.out.println(fli.getFlightCarrier());
-            }else {
-                System.out.println("xml file is not marshalling");
-            }
+        } else {
+            System.out.println("xml file is not marshalling");
         }
+    }
 }

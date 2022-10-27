@@ -8,7 +8,7 @@ import static org.junit.Assert.assertEquals;
 
 public class FlightTest {
 
-    private static Flight flight1;
+    private  Flight flight1;
     private static final String DATE = "2018-05-05";
     private static final String TIME = "17:30:00";
     private static final String BUSINESS = "Business";
