@@ -1,10 +1,14 @@
 package com.flightdata.service.flight;
 
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
 import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
 
+
+@JsonPropertyOrder({"flightCarrier", "depAir", "destAir", "id", "inArrivalDate", "inArrivalTime", "inarriveCode", "inbookingClass", "incarrierCode", "indepartCode",
+        "inDepartDate", "inDepartTime", "inFlightClass", "inFlightNo", "oneWay", "originalCurrency", "originalPrice", "outArrivalDate", "outArrivalTime", "outBookingClass", "outCarrierCode",
+        "outDepartDate", "outDepartTime", "outFlightClass", "outFlightNo", "reservation"})
 public class Flight {
-
 
     private String carrier;
     private String depair;
@@ -62,241 +66,248 @@ public class Flight {
         this.reservation = reservation;
     }
 
-    public Flight(){
+    public Flight() {
 
     }
 
-    @XmlAttribute(name = "carrier")
     public String getFlightCarrier() {
         return carrier;
     }
 
-    public void setCarrier(String carrier) {
+    @XmlAttribute(name = "carrier")
+    public void setFlightCarrier(String carrier) {
         this.carrier = carrier;
     }
 
-    @XmlAttribute(name = "depair")
     public String getDepAir() {
         return depair;
     }
 
+    @XmlAttribute(name = "depair")
     public void setDepAir(String depair) {
         this.depair = depair;
     }
 
-    @XmlAttribute(name = "destair")
-    public String getDestAir(){
+    public String getDestAir() {
         return destair;
     }
 
+    @XmlAttribute(name = "destair")
     public void setDestAir(String destair) {
         this.destair = destair;
     }
 
-    @XmlAttribute(name = "id")
     public String getId() {
         return id;
     }
 
+    @XmlAttribute(name = "id")
     public void setId(String id) {
         this.id = id;
     }
 
-    @XmlAttribute(name = "inarrivaldate")
     public String getInArrivalDate() {
         return inArrivalDate;
     }
 
+    @XmlAttribute(name = "inarrivaldate")
     public void setInarrivalDate(String inArrivalDate) {
         this.inArrivalDate = inArrivalDate;
     }
 
-    @XmlAttribute(name = "inarrivaltime")
     public String getInarrivalTime() {
         return inArrivalTime;
     }
 
+    @XmlAttribute(name = "inarrivaltime")
     public void setInarrivalTime(String inArrivalTime) {
         this.inArrivalTime = inArrivalTime;
     }
 
-    @XmlAttribute(name = "inarrivalcode")
     public String getInarriveCode() {
         return inArriveCode;
     }
 
+    @XmlAttribute(name = "inarrivecode")
     public void setInarriveCode(String inArriveCode) {
         this.inArriveCode = inArriveCode;
     }
 
-    @XmlAttribute(name = "inbookingclass")
     public String getInbookingClass() {
         return inBookingClass;
     }
 
+    @XmlAttribute(name = "inbookingclass")
     public void setInbookingClass(String inBookingClass) {
         this.inBookingClass = inBookingClass;
     }
 
-    @XmlAttribute(name = "incarriercode")
     public String getIncarrierCode() {
         return inCarrierCode;
     }
 
+    @XmlAttribute(name = "incarriercode")
     public void setIncarrierCode(String inCarrierCode) {
         this.inCarrierCode = inCarrierCode;
     }
 
-    @XmlAttribute(name = "indepartcode")
+
     public String getIndepartCode() {
         return inDepartCode;
     }
 
+    @XmlAttribute(name = "indepartcode")
     public void setIndepartCode(String inDepartCode) {
         this.inDepartCode = inDepartCode;
     }
 
-    @XmlAttribute(name = "indepartdate")
+
     public String getInDepartDate() {
         return inDepartDate;
     }
 
+    @XmlAttribute(name = "indepartdate")
     public void setInDepartDate(String inDepartDate) {
         this.inDepartDate = inDepartDate;
     }
 
-    @XmlAttribute(name = "indeparttime")
     public String getInDepartTime() {
         return inDepartTime;
     }
 
+    @XmlAttribute(name = "indeparttime")
     public void setInDepartTime(String inDepartTime) {
         this.inDepartTime = inDepartTime;
     }
 
-    @XmlAttribute(name = "inflightclass")
     public String getInFlightClass() {
         return inFlightClass;
     }
 
+    @XmlAttribute(name = "inflightclass")
     public void setInFlightClass(String inFlightClass) {
         this.inFlightClass = inFlightClass;
     }
 
-    @XmlAttribute(name = "inflightno")
+
     public String getInFlightNo() {
         return inFlightNo;
     }
 
+    @XmlAttribute(name = "inflightno")
     public void setInFlightNo(String inFlightNo) {
         this.inFlightNo = inFlightNo;
     }
 
-    @XmlAttribute(name = "oneway")
+
     public String getOneWay() {
         return oneWay;
     }
 
-
+    @XmlAttribute(name = "oneway")
     public void setOneWay(String oneWay) {
         this.oneWay = oneWay;
     }
 
-    @XmlAttribute(name = "orginalcurrency")
+
     public String getOriginalCurrency() {
         return originalCurrency;
     }
 
+    @XmlAttribute(name = "originalcurrency")
     public void setOriginalCurrency(String originalCurrency) {
         this.originalCurrency = originalCurrency;
     }
 
-    @XmlAttribute(name = "orginalprice")
     public String getOriginalPrice() {
         return originalPrice;
     }
 
+    @XmlAttribute(name = "originalprice")
     public void setOriginalPrice(String originalPrice) {
         this.originalPrice = originalPrice;
     }
 
-    @XmlAttribute(name="outarrivaldate")
     public String getOutArrivalDate() {
         return outArrivalDate;
     }
 
+    @XmlAttribute(name = "outarrivaldate")
     public void setOutArrivalDate(String outArrivalDate) {
         this.outArrivalDate = outArrivalDate;
     }
 
-    @XmlAttribute(name = "outarrivaldate")
+
     public String getOutArrivalTime() {
         return outArrivalTime;
     }
 
+    @XmlAttribute(name = "outarrivaltime")
     public void setOutArrivalTime(String outArrivalTime) {
         this.outArrivalTime = outArrivalTime;
     }
 
-    @XmlAttribute(name = "outbookingclass")
+
     public String getOutBookingClass() {
         return outBookingClass;
     }
 
+    @XmlAttribute(name = "outcarriercode")
     public void setOutBookingClass(String outBookingClass) {
         this.outBookingClass = outBookingClass;
     }
 
-    @XmlAttribute(name = "outcarriercode")
     public String getOutCarrierCode() {
         return outCarrierCode;
     }
 
+    @XmlAttribute(name = "outbookingclass")
     public void setOutCarrierCode(String outCarrierCode) {
         this.outCarrierCode = outCarrierCode;
     }
 
-    @XmlAttribute(name = "outdepartdate")
+
     public String getOutDepartDate() {
         return outDepartDate;
     }
 
+    @XmlAttribute(name = "outdepartdate")
     public void setOutDepartDate(String outDepartDate) {
         this.outDepartDate = outDepartDate;
     }
 
-    @XmlAttribute(name = "outdeparttime")
     public String getOutDepartTime() {
         return outDepartTime;
     }
 
+    @XmlAttribute(name = "outdeparttime")
     public void setOutDepartTime(String outDepartTime) {
         this.outDepartTime = outDepartTime;
     }
 
-    @XmlAttribute(name = "outflightclass")
     public String getOutFlightClass() {
         return outFlightClass;
     }
 
+    @XmlAttribute(name = "outflightclass")
     public void setOutFlightClass(String outFlightClass) {
         this.outFlightClass = outFlightClass;
     }
 
-    @XmlAttribute(name = "outflightno")
     public String getOutFlightNo() {
         return outFlightNo;
     }
 
+    @XmlAttribute(name = "outflightno")
     public void setOutFlightNo(String outFlightNo) {
         this.outFlightNo = outFlightNo;
     }
 
-    @XmlAttribute(name = "reservation")
     public String getReservation() {
         return reservation;
     }
 
+    @XmlAttribute(name = "reservation")
     public void setReservation(String reservation) {
         this.reservation = reservation;
     }

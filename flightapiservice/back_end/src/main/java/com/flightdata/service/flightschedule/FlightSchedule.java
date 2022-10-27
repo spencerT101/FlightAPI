@@ -20,22 +20,24 @@ public class FlightSchedule {
 
     }
 
+    @XmlElement(name = "flight")
+    public ArrayList<Flight> getFlights() {
+        return flights;
+    }
+
+    public void setFlights(ArrayList<Flight> flights) {
+        this.flights = flights;
+    }
+
     public int getFlightsSize() {
         return this.flights.size();
     }
 
-    public void addFlight(Flight flight){
+    public void addFlight(Flight flight) {
         this.flights.add(flight);
     }
 
-    public void removeFlight(Flight flight){
+    public void removeFlight(Flight flight) {
         this.flights.remove(flight);
     }
-
-    @XmlElement(name = "flight")
-    public  ArrayList<Flight> getFlights(){
-        return flights;
-    }
-
-
 }

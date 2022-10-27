@@ -25,7 +25,7 @@ You should then create a web-page that that can retrieve the data from your API,
 - Run the application either from the FlightserviceApplication class or from the drop down menu select FlightserviceApplication and push the play icon.
 - In your chosen API client create a GET request.
 - Set url to localhost:8080/flight/flightdata.
-- CURRENTLY UNABLE TO RETURN A JSON RESPONSE AS OF YET. PLEASE SEE ISSUES SECTION BELOW.
+- CURRENTLY ONLY ABLE TO RETURN A FLIGHT JSON RESPONSE AS OF YET. PLEASE SEE ISSUES SECTION BELOW.
 
 ## Issues
 

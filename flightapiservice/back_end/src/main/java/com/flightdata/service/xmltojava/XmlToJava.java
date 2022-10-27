@@ -10,7 +10,6 @@ import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 import javax.xml.transform.stream.StreamSource;
 import java.io.*;
-import java.util.ArrayList;
 import java.util.List;
 
 
@@ -18,44 +17,23 @@ public class XmlToJava {
 
     private static final String PATH = "/Users/spencertaber/coding_projects/Java/FlightAPI/flightapiservice/back_end/src/main/resources/flighdata.xml";
 
-//    public  void  getUnmarshaller() throws JAXBException, SAXException, IOException {
-////        String fileRoute = PATH;
-////        unmarshalFlightData();
-//    }
-
-    public static void main(String[] args) throws JAXBException, IOException {
+    public FlightSchedule getUnmarshal() throws JAXBException, IOException {
 
         File file = new File(PATH);
-
-        BufferedReader br = new BufferedReader(new FileReader(file));
-
-        String st = null;
-
-        StringBuffer sb = new StringBuffer();
-
-        try {
-            while ((st = br.readLine()) != null) {
-                System.out.println(st);
-                sb.append(st);
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
 
         JAXBContext context = JAXBContext.newInstance(FlightSchedule.class);
         Unmarshaller unmarshaller = context.createUnmarshaller();
 
-        StringReader reader = new StringReader(sb.toString());
-        FlightSchedule flightSchedule = (FlightSchedule) unmarshaller.unmarshal(reader);
+        FileReader reader = new FileReader(file);
+        FlightSchedule flightSchedule = (FlightSchedule) unmarshaller.unmarshal(new StreamSource(reader));
 
         List<Flight> list = flightSchedule.getFlights();
 
-        if (list != null) {
-            for (Flight fli : list)
-                System.out.println(fli.getFlightCarrier());
-        } else {
-            System.out.println("xml file is not marshalling");
+        if (list.equals(null)) {
+            System.out.println("Error List is null. Check xml file or debug unmarshal method");
+
         }
+
+        return flightSchedule;
     }
 }
