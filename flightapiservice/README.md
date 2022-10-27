@@ -22,9 +22,13 @@ You should then create a web-page that that can retrieve the data from your API,
 ## Installation and set up...
 
 - Clone the repository and open in your chosen IDE (Intellij recommended).
-- Run the application either from the FlightserviceApplication class or from the drop down menu select FlightserviceApplication and push the play icon.
+
+- Run the application either from the FlightserviceApplication class or from the drop down menu select FlightserviceApplication and push the play icon. (May need to sync maven and rebuild project first)
+
 - In your chosen API client create a GET request.
+
 - Set url to localhost:8080/flight/flightdata.
+
 - CURRENTLY ONLY ABLE TO RETURN A FLIGHT JSON RESPONSE AS OF YET. PLEASE SEE ISSUES SECTION BELOW.
 
 ## Issues
